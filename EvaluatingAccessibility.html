@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129146091-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129146091-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>User Science Journal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Amanda Nave</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="AnalyzeForUsability.html">Post 1: Analyze For Usability</a>
+                            <a class="dropdown-item" href="UsableDesignAnalysis.html">Post 2: Usable Design Analysis</a>
+                            <a class="dropdown-item" href="EvaluatingAccessibility.html">Post 3: Evaluating
+                                Accessibility</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Evaluating Accessibility</h1>
+                        <h2 class="subheading">Week 5 Assignment Post</h2>
+                        <span class="meta">Posted by
+                            <a href="#">Amanda Nave</a>
+                            on May 5, 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <p>For this week’s project on website accessibility, the page I’ve chosen to evaluate is <a
+                            href="https://www.becu.org/" target="_blank" style="text-decoration: underline;">BECU</a>.
+                        This
+                        website is where members of BECU can check their banking accounts online, as well as apply for
+                        loans
+                        and credit cards. I chose to use the <a href="https://www.w3.org/WAI/test-evaluate/preliminary/"
+                            target="_blank" style="text-decoration: underline;">‘Easy Checks‘</a> guidelines set forth
+                        by <a href="https://www.w3.org/" target="_blank" style="text-decoration: underline;">w3.org</a>
+                        which reviews the
+                        page title, image text alternatives (alt text), text headings, contrast ratio, interaction
+                        including
+                        keyboard access & visual focus, forms, labels and errors, multimedia alternatives and a basic
+                        structure check. I also used the <a href="http://wave.webaim.org/" target="_blank"
+                            style="text-decoration: underline;">WAVE tool</a> that analyzes pages for usability.
+                        Just to get a feel of how usable the page might be, I decide to run it through the WAVE tool for
+                        analysis. I’m not sure if this is common for many pages, but BECU’s website seems to have a LOT
+                        of accessibility errors:
+                    </p>
+                    <img class="img-fluid" src="img/WAVE Evaluation 1.png" alt="WAVE Evaluation Summary">
+
+                    <p>Luckily, WAVE breaks down each error and explains why it is important and how to fix it. For
+                        example, the first thing listed under the ‘Error’ section is that an image is missing
+                        alternative text. This will cause the screen reader to not be able to read it and describe the
+                        image to the user. Here is the recommended fix from WAVE:</p>
+
+                    <img class="img-fluid" src="img/Documentation.png" alt="WAVE Error Documentation">
+
+                    <p>Like I said previously, according to WAVE BECU’s site has many accessibility errors which makes
+                        me question just how disabled/visually impaired are supposed to use this site? Hopefully the W3
+                        WAI Easy Checks can help us look into this further.</p>
+
+                    <h3 class="section-heading">Page Titles</h3>
+                    <p>
+                        <ul>
+                            <li>The page titles are shown in the title bar, in the browsers tabs with multiple pages
+                                open, shows up in search engine results and can be used to bookmark the page.</li>
+                            <li>BECU is coded in the HTML markup under &lt;title&gt; in the heading</li>
+                        </ul>
+                    </p>
+
+                    <img class="img-fluid" src="img/Page Titles Inspect.png" alt="BECU Page Title Inspection">
+
+                    <h3 class="section-heading">Image Text Alternatives (alt text):</h3>
+                    <p>
+                        WAVE only reported back 1 image with missing alt text on the main page, which is the image for
+                        the ‘Free Financial Health Check’. The image is a clip art type book which I’m not sure lends a
+                        whole lot of meaning to the link, however I think if they wanted to be WAI compliant, they
+                        should add an alt tag with a short description of the image.
+                    </p>
+
+                    <img class="img-fluid" src="img/Image Alternatives.png" alt="Result: Missing Alt Text">
+
+                    <h3 class="section-heading">Headings:</h3>
+                    <p>
+                        WAVE reported 1 skipped heading level in the ‘Cash Back Visa’ section which has an &lt;h4&gt; heading
+                            and the section above it has an &lt;h2&gt; heading. I’m not sure if this is the cause of the flag
+                                since there are other similar sections under the &lt;h2&gt; heading but it is my best guess
+                                    since there is no &lt;h3&gt; heading between them. To me this is something that could be
+                                        kept if it works for the page and the screen readers.
+                    </p>
+
+                    <img class="img-fluid" src="img/Headings.png" alt="Headings Error">
+
+                    <h3 class="section-heading">Contrast Ratio:</h3>
+                    <p>
+                        Overall the BECU site has great contrast without making the whole page black and white. The page background is white and uses black and red lettering to stand out. There are also sections of the page that have a black background with white lettering. I think the site does a great job at making the text on their page stand out while still going with their company colors and theme.
+                    </p>
+
+                    <img class="img-fluid" src="img/Contrast Ratio.png" alt="Contrast Ratio">
+
+                    <h3 class="section-heading">Resize Text:</h3>
+                    <p>
+                        I zoomed in on this page as much as I could to see how much the text could be enlarged. The page is very responsive and stays intact while making the text large and easy to read.
+                    </p>
+
+                    <img class="img-fluid" src="img/Resize Text.png" alt="Resize Text">
+
+                    <h3 class="section-heading">Keyboard Access and Visual Focus:</h3>
+                    <p>
+                        The page doesn’t have any drop down type menus, however I was able to easily tab through each section and select links to follow.
+                    </p>
+
+                    <h3 class="section-heading">Moving, Flashing or Blinking Content</h3>
+                    <p>
+                        The only moving content on the BECU homepage is the slow moving carousel that contains images with links to other features on their site. According to W3’s WAI criteria, the carousel has no flashes or blinks, auto-updated information or has movement that lasts less than 5 seconds. I think this carousel should be safe for those with epilepsy.
+                    </p>
+
+                    <h3 class="section-heading">Multimedia Alternatives:</h3>
+                    <p>
+                        BECU’s homepage does not contain any multimedia such as audio or videos.
+                    </p>
+
+                    <h3 class="section-heading">Basic Structure Check:</h3>
+                    <p>
+                        After linearizing the page like W3 recommends, the content makes sense in how it was moved since the page is responsive. However I couldn’t get my computer to turn off the CSS styles so I was not able to test that part.
+                    </p>
+
+                    <h3 class="section-heading">The Findings:</h3>
+                    <p>
+                        In comparison between the WAVE analysis and the ‘Easy Checks’ done from the W3 WAI guidelines, the BECU site is much more usable than one is led to believe with WAVE since it has so many flags. However, I do think that there are some things that are good to look over with that report, such as the headings to make sure they match and fall in the right order. I don’t think that BECU has too much more to work on their page besides fixing the one alt tag.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
