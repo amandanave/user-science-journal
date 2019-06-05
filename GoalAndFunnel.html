@@ -57,7 +57,6 @@
                             aria-haspopup="true" aria-expanded="false">
                             Blog
                         </a>
-                        
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                             <a class="dropdown-item" href="AnalyzeForUsability.html">Post 1: Analyze For Usability</a>
                             <a class="dropdown-item" href="UsableDesignAnalysis.html">Post 2: Usable Design Analysis</a>
@@ -85,11 +84,11 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h1>Make User Science Journal Accessible</h1>
-                        <h2 class="subheading">Week 6 Assignment Post</h2>
+                        <h1>Goal and Funnel tracking</h1>
+                        <h2 class="subheading">Week 8 Assignment Post</h2>
                         <span class="meta">Posted by
                             <a href="#">Amanda Nave</a>
-                            on May 23, 2019</span>
+                            on June 5, 2019</span>
                     </div>
                 </div>
             </div>
@@ -101,61 +100,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <p>
-                        For this week’s project I added Google Analytics to this journal. Prior to beginning this
-                        project I hypothesized that my site would be most popular with women ages 25-30 since most of my
-                        friends are in that range and the most traffic would come directly from users clicking the link
-                        for my journal. I also figured that the main page of my journal would be the most popular (since
-                        it is the link I sent out to others for testing.).
-                        <br>
-                        <br>
-                        The process to get analytics set up on this journal wasn’t terribly difficult. The JavaScript
-                        code was provided to me immediately after signing up and I was able to insert it into my header
-                        and footer scripts plugin to begin tracking without issue. There is an overwhelming amount of
-                        really neat stuff you can track with this tool such as seeing the what types of devices and
-                        operating systems your visitors use, what internet network they are using to access your page,
-                        and their demographics.
-                        <br>
-                        <br>
-                        I attempted to set up the demographics tracking twice on my page by following the instructions
-                        online, however it never began tracking. This was unfortunate because I was really looking
-                        forward to seeing if my guesses were accurate. I am working on getting that portion fixed and
-                        updating this post once I have more information. However, the information I was able to track
-                        had some interesting findings.
-                    </p>
-                    <br>
-                    <img class="img-fluid" src="img/Analytics1.png" alt="Google Analytics Overview">
-                    <br>
-                    <p>Here is an overview of how my site did over this week. I didn’t expect to
-                        have many page views
-                        or returning users so was pleased to see that I did.</p>
+                    <p>For this week’s assignment I created a Goal to track with a funnel using Google Analytics to
+                        measure how many users I could get to follow a specific link to a different page on my blog.
+                        This is referred to as a <b>destination</b> goal.</p>
 
+                    <h3 class="section-heading">The Process:</h3>
+                    <p>To do this, I created a ‘Pandas’ blog post, and filled it with 3 totally adorable images of pandas. Because who really couldn’t use some panda pictures to brighten their day? After the page was created, I linked it to my blog homepage (<a href="http://amandanave.com/user-science-journal/" target="_blank">here</a>) in a caption box that says “Click here to see pictures of Pandas”.
                     <br>
-                    <img class="img-fluid" src="img/Analytics2.png" alt="Channel Grouping Results">
+                    Once the page was created and linked, I began setting up the Goal tracking in Google Analytics. I used a custom template, gave the Goal the name of “Click on Pandas”, chose “Destination” as the type and set it to the pandas page:</p>
 
-                    <p>
-                        Above is the Channel report which shows how users accessed my page, either by the direct link or
-                        through social media. Digging deeper on the social media information showed that my journal was
-                        accessed through Facebook which is puzzling because I never posted the link there. Besides that
-                        part, it was also interesting seeing how long people spent on my page. I also expected the
-                        bounce rate to be on the higher end since I did not instruct anyone specifically what to do when
-                        they got to my site.
-                    </p>
-                    <img class="img-fluid" src="img/Analytics3.png" alt="Source Results">
-                    <br>
-                    <p>This image shows that 5 of my users came from Facebook, which again is interesting because I
-                        never provided the link on there. I’m wondering if someone that I did share the link with then
-                        shared it to others through Facebook?
-                        <br>
-                        <br>
-                        This project was great to get your feet wet with Google Analytics. There is so much more to
-                        learn about it and all the awesome things you are able to do with it. It is a great tool to know
-                        how to use and I am very excited to learn more about it!
-                    </p>
+                    <img class="img-fluid" src="img/GoalSetup.png" alt="Google Analytics Goal Setup">
 
+                    <p>As you can see above, I also set a value to the goal (for fun) then added a funnel to the goal. Funnels track the steps a user must take in order to complete the goal action. For mine, I created a link within this post for users to click on, which would take them to my homepage where they could follow the pandas link.</p>
+
+                    <h3 class="section-heading">The Results:</h3>
+
+                    <p>It took a bit of tinkering, but I knew everything was set up correctly because I was able to see tracking information show up in my Goal Conversion report from me clicking around on my phone and computer:</p>
+
+                    <img class="img-fluid" src="img/GoalConversions.png" alt="Google Analytics Goal Conversion Report">
+
+                    <p>Through the Funnel Visualization report below, I was able to confirm that the path I chose to bring users to complete the goal was in fact working properly:</p>
+
+                    <img class="img-fluid" src="img/FunnelVisualization.png" alt="Google Analytics Funnel Visualization Report">
+
+                    <h3 class="section-heading">In Conclusion:</h3>
+
+                    <p>The Goals, Events and Funneling tools all seem very valuable for people and businesses to track how users are coming through their site, as well as at gauging how effective their website is at directing users to complete their goals such as completing a purchase, downloading a file, or signing up for a mailing list. </p>
                 </div>
             </div>
-        </div>
         </div>
     </article>
 
